@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="lt.mybatis">
+	<target name="package.lt.mybatis">
+		<echo>系统部署-njrf内网-服务端</echo>
+		<delete dir="D:\JavaWorkSpace\lt.mybatis\target\lt.mybatis\WEB-INF\classes" />
+		<mkdir dir="D:\JavaWorkSpace\lt.mybatis\target\lt.mybatis\WEB-INF\classes" />
+		<copy todir="D:\JavaWorkSpace\lt.mybatis\target\lt.mybatis\WEB-INF\classes">
+			<fileset dir="D:\JavaWorkSpace\lt.mybatis\target\classes" />
+		</copy>
+	</target> 
+</project>

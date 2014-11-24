@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="FunMapper">
+
+	<resultMap id="FunResult" type="Fun">
+		<result property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="x" column="x" />
+		<result property="geom" column="geom" />
+		<result property="geometry" column="geometry" />
+		<result property="type" column="type" />
+	</resultMap> 
+
+	<select id="selectFun" parameterType="java.lang.String"
+		resultMap="FunResult">
+		select id, name, x,geom,geometry,type  
+		from fun 
+		where name=#{name}
+	</select>
+</mapper>
